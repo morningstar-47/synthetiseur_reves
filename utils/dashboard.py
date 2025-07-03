@@ -31,3 +31,17 @@ def get_all_dreams():
         dreams.append(dream)
 
     return dreams
+
+
+def delete_dream(filename: str):
+    base_audio = f"dreams/audios/{filename}"
+    base_transcription = f"dreams/transcriptions/{filename}.txt"
+    base_image = f"assets/{filename}.jpg"
+
+    # Suppression sécurisée
+    for path in [base_audio, base_transcription, base_image]:
+        try:
+            if os.path.exists(path):
+                os.remove(path)
+        except Exception as e:
+            print(f"Erreur lors de la suppression de {path} : {e}")

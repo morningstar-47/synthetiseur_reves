@@ -72,7 +72,15 @@ if not dreams:
 else:
     for dream in dreams[::-1]:
         with st.expander(f"🎧 {dream['filename']}"):
-            st.audio(dream['audio'])
+            col1, col2 = st.columns([0.8, 0.2])
+            with col1:
+                st.audio(dream['audio'])
+
+            with col2:
+                if st.button("🗑️ Supprimer", key=f"del_{dream['filename']}"):
+                    from utils.dashboard import delete_dream
+                    delete_dream(dream['filename'])
+                    st.warning("❌ Ce rêve a été supprimé. Rechargez la page pour mettre à jour la liste.")
 
             st.markdown("#### 📝 Transcription")
             st.write(dream['transcription'])
@@ -82,3 +90,4 @@ else:
                 st.image(dream["image"], use_container_width=True)
             else:
                 st.warning("⚠️ Aucune image générée pour ce rêve.")
+

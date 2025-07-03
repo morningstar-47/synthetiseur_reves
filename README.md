@@ -49,20 +49,12 @@ Une application Web magique ✨ qui vous permet d’enregistrer vos rêves, de l
 
 ### 🧠 1.2 Séquence clé – Traitement d’un rêve (UML fonctionnel)
 
-```
-[🎧 Audio utilisateur]
-        ↓
-[🎤 Transcription Groq LLM]
-        ↓
-[📝 Texte du rêve]
-        ↓
-[🎨 Image générée (ClipDrop)]
-        ↓
-[😴 Analyse émotionnelle (Mistral)]
-        ↓
-[📚 Affichage : audio + texte + image + émotion]
-```
+```mermaid
+graph TD
 
+    [🎧 Audio utilisateur] --> [🎤 Transcription Groq LLM] --> [📝 Texte du rêve] --> [🎨 Image générée (ClipDrop)] --> [😴 Analyse émotionnelle (Mistral)] --> [📚 Affichage : audio + texte + image + émotion]
+```
+ 
 ---
 
 ## 📦 Installation
@@ -139,8 +131,8 @@ synthetiseur-de-reves/
 
 ## 🧙 Auteur
 
-Développé avec amour par [Ton Nom](https://github.com/tonpseudo)  
-Projet académique / personnel ✨ – librement inspiré de l’inconscient collectif 🌌
+Développé avec amour par [Emmanuel](https://github.com/morningstar-47)  
+Projet académique ✨ – librement inspiré de l’inconscient collectif 🌌
 
 ---
 

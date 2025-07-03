@@ -49,7 +49,7 @@ Une application Web magique ✨ qui vous permet d’enregistrer vos rêves, de l
 
 ### 🧠 1.2 Séquence clé – Traitement d’un rêve (UML fonctionnel)
 
-```mermaid
+```
 graph TD
     A[🎧 Audio utilisateur] --> B[📝 Transcription via Groq LLM]
     B --> C[💬 Texte du rêve]

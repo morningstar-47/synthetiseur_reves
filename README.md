@@ -51,8 +51,12 @@ Une application Web magique ✨ qui vous permet d’enregistrer vos rêves, de l
 
 ```mermaid
 graph TD
+    A[🎧 Audio utilisateur] --> B[📝 Transcription via Groq LLM]
+    B --> C[💬 Texte du rêve]
+    C --> D[🎨 Image générée (ClipDrop)]
+    D --> E[😴 Analyse émotionnelle (Mistral)]
+    E --> F[📚 Affichage final : audio + texte + image + émotion]
 
-    Audio utilisateur --> Transcription Groq LLM --> Texte du rêve --> Image générée (ClipDrop) --> Analyse émotionnelle (Mistral) --> Affichage : audio + texte + image + émotion
 ```
  
 ---

@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+venv/
+syth_env/
+*.db
+assets/
+dreams/audios/
+dreams/transcriptions/

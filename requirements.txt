@@ -1,0 +1,6 @@
+streamlit
+pydub
+mistralai
+python-dotenv
+requests
+groq

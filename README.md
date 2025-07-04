@@ -135,7 +135,7 @@ synthetiseur-de-reves/
 
 ## 🧙 Auteur
 
-Développé avec amour par [Emmanuel](https://github.com/morningstar-47)  
+Développé avec amour par [Emmanuel Mopeno-Bia](https://github.com/morningstar-47) et [Koceila Lemdani](https://github.com/dondeestakoko)  
 Projet académique ✨ – librement inspiré de l’inconscient collectif 🌌
 
 ---
